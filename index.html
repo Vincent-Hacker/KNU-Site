@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kwame Nkrumah University</title>
+  <meta name="description" content="Kwame Nkrumah University - Premier higher education institution in Zambia">
+  <meta name="keywords" content="university, Zambia, education, higher education, Kwame Nkrumah">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files - Using CDN for reliability -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+ 
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    #program-results { margin-top: 20px; }
+    #program-results .program-details { background: #f8f9fa; padding: 15px; border-radius: 5px; }
+    #program-results .details { font-size: 0.9em; color: #666; margin-top: 5px; }
+    .hidden { display: none; }
+    .pill-btn.active { background-color: #ff992f; color: white; }
+    .hero { 
+      background-image: url('assets/img/Website/campus2.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      position: relative; 
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    }
+    .hero .container {
+      position: relative; /* Ensure content is above overlay */
+      z-index: 1;
+    }
+    .hero h1, .hero p, .hero .highlight-item h3, .hero .highlight-item p {
+      color: white; /* Adjust text colors for visibility */
+    }
+  </style>
+</head>
+<body class="index-page">
+  <header class="header sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <div style="width: 115px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+          <img src="assets/img/newknulogo.png" alt="Kwame Nkrumah University Logo" width="115" height="100">
+        </div>
+        <h1 class="sitename">Kwame Nkrumah University</h1>
+      </a>
+      <nav class="navmenu">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li class="dropdown"><a href="">About</a>
+            <ul>
+              <li><a href="https://www.nkrumah.edu.zm/home/management/">Management</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#portfolio">News</a></li>
+              <li><a href="#">Directorates</a></li>
+              <li><a href="#merchendise">Merchandise</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Library</a>
+            <ul>
+              <li><a href="https://accessjournal.nkrumah.edu.zm">KNU Journal</a></li>
+              <li><a href="https://knuspace.nkrumah.edu.zm/">Institutional Repository</a></li>
+              <li><a href="http://library1.nkrumah.edu.zm/">Library Catalogue</a></li>
+              <li class="dropdown"><a href="#">E-Resources</a>
+                <ul>
+                  <li><a href="https://www.nkrumah.edu.zm/home/library.php">Campus Access</a></li>
+                  <li><a href="https://zalico.remotexs.co/user/login">Remote Access</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#">Open Access</a>
+                <ul>
+                  <li><a href="https://www.pdfdrive.com">PDF Drive</a></li>
+                  <li><a href="https://www.doaj.org">Directory of Open Access Journal</a></li>
+                  <li><a href="https://www.doabooks.org">Directory of Open Access Books</a></li>
+                  <li><a href="https://www.oatd.org">Thesis and Dissertations</a></li>
+                  <li><a href="https://www.nkrumah.edu.zm/home/onlineresources.php">Online Resources</a></li>
+                </ul>
+              </li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.astrialibrary">Astria Digital Library</a></li>
+              <li><a href="KNU Library Rules and Regulations.pdf">Library Rules and Regulations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Payments</a>
+            <ul>
+              <li><a href="APPROVED FEES 2024 - 2026 ACADEMIC YEAR.pdf">TUITION FEES</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Schools</a>
+            <ul>
+              <li><a href="https://www.nkrumah.edu.zm/home/sbs/about.html">School of Business</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/home/shss/about.html">School of Humanities</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/home/sns/about.html">School of Natural Sciences</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/home/sed/about.html">School of Education</a></li>
+              <li class="dropdown"><a href="#">Departments</a>
+                <ul>
+                  <li><a href="https://www.nkrumah.edu.zm/home/DRPGSI/about.html">Directorate of Research Postgraduate Studies</a></li>
+                  <li><a href="odl/about.html">Open and Distance Learning Unit</a></li>
+                  <li><a href="https://www.nkrumah.edu.zm/home/dosa/about.html">Dean Of Students Affairs</a></li>
+                  <li><a href="#academicoffice">Academic Office</a></li>
+                  <li><a href="#ict">ICT Unit</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Portals</a>
+            <ul>
+              <li><a href="https://e-learning.nkrumah.edu.zm/">e-Learning</a></li>
+              <li><a href="https://www.grammarly.com/plagiarism-checker">Online Plagiarism Checker</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/edurole/">Student Portal (Edurole)</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/home/soas/">Student Online Application</a></li>
+              <li><a href="https://mail.nkrumah.edu.zm/">Staff Email</a></li>
+              <li><a href="https://clinic.nkrumah.edu.zm">Clinic Management System</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Short Courses</a>
+            <ul>
+              <li><a href="https://www.nkrumah.edu.zm/home/cisco/index.html">Cisco Short Courses</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/home/scoas/index.php">Nkrumah Short Courses</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Careers</a>
+            <ul>
+              <li><a href="https://www.nkrumah.edu.zm/home/Jobs.html">Jobs</a></li>
+              <li><a href="https://www.nkrumah.edu.zm/home/Procurement.html">Procurement</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Projects</a>
+            <ul>
+              <li><a href="https://www.nkrumah.edu.zm/home/erasmus.html">Erasmus</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+     
+    </div>
+  </header>
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Welcome to Kwame Nkrumah University</h1>
+          <p>The institution was opened in 1967, as Kabwe Teachers Training College. It trained Junior Secondary School Teachers at its inception. Four years later, the President of Zambia at the time, Kenneth Kaunda, renamed the college Nkrumah Teachers College, in honor of Kwame Nkrumah, the founding president of Ghana.</p>
+          <div class="cta-buttons">
+            <a href="https://www.nkrumah.edu.zm/home/soas/login.php" class="btn-apply">Get Started</a>
+            <a href="#" class="btn-tour">Campus Tour</a>
+          </div>
+        </div>
+        <div class="highlights-container">
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <div class="highlight-item">
+                <div class="icon">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h3>98% Graduate Success</h3>
+                <p>Our graduates achieve remarkable success in their careers and further studies.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="highlight-item">
+                <div class="icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h3>16:1 Student-Faculty Ratio</h3>
+                <p>Small class sizes ensure personalized attention and quality education.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="highlight-item">
+                <div class="icon">
+                  <i class="bi bi-globe-americas"></i>
+                </div>
+                <h3>Global Community</h3>
+                <p>Join a diverse community of students from across Zambia and beyond.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event-banner">
+          <div class="row align-items-center">
+            <div class="col-md-2">
+              <div class="event-date">
+                <span class="month">OCT</span>
+                <span class="day">28</span>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h3>Open Campus Day</h3>
+              <p>Experience our vibrant campus life, meet faculty members, and learn about our academic programs.</p>
+            </div>
+            <div class="col-md-2">
+              <a href="#" class="btn-register">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Search Section -->
+    <section class="search section" id="search">
+      <div class="container text-center">
+        <div id="help-message" class="hidden">
+          <h2>What would you like to study?</h2>
+        </div>
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input id="program-search" placeholder="Search for programmes here" type="text" list="program-datalist" autocomplete="off">
+          <datalist id="program-datalist"></datalist>
+        </div>
+        <div class="category-pills">
+          <button class="pill-btn" data-category="all">All</button>
+          <button class="pill-btn" data-category="business"><i class="fa fa-briefcase" aria-hidden="true"></i> Business</button>
+          <button class="pill-btn" data-category="computers"><i class="fa fa-desktop" aria-hidden="true"></i> Computers</button>
+          <button class="pill-btn" data-category="education">Education</button>
+          <button class="pill-btn" data-category="health">Health</button>
+          <button class="pill-btn" data-category="science">Science</button>
+          <button class="pill-btn" data-category="humanities">Humanities</button>
+          <button class="pill-btn" data-category="agriculture">Agriculture</button>
+        </div>
+        <div id="program-results"></div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="content">
+              <h3>About Us</h3>
+              <p>The Kwame Nkrumah University (KNU) is a public university established in 2011 in the northern province of Zambia. It runs the University under the supervision of the University Council. There are four schools namely; the School of Natural Science, the School of Business Studies, the School of Humanities and Social Sciences, and the School of Education. Additionally, the University has two Directorates namely; Open and Distance Learning and Research and Postgraduate Studies</p>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <div class="number">15,000+</div>
+                  <div class="label">Students Enrolled</div>
+                </div>
+                <div class="stat-item">
+                  <div class="number">98%</div>
+                  <div class="label">Graduation Rate</div>
+                </div>
+                <div class="stat-item">
+                  <div class="number">250+</div>
+                  <div class="label">Expert Faculty</div>
+                </div>
+              </div>
+              <div class="mission-statement">
+                <p><em>Our mission is to Deliver Quality Education, Research and Consultancy, that is responsive to the changing needs and values of the Local, National and International Communities.</em></p>
+              </div>
+              <a href="about.html" class="btn-learn-more">
+                Learn More About Us
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-wrapper">
+              <img src="assets/img/Website/campus2.jpg" alt="Campus Overview" class="img-fluid">
+              <div class="experience-badge">
+                <div class="years">55+</div>
+                <div class="text">Years of Excellence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Campus Life</h2>
+          <p>Explore our vibrant campus and facilities</p>
+        </div>
+       
+        <div class="text-center mb-4">
+          <a href="gallery.php" class="btn-learn-more">View Full Gallery</a>
+        </div>
+       
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/img/Website/library.jpg" alt="Library">
+            <div class="gallery-overlay">
+              <h5>Library</h5>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img/Website/lib4.jpg" alt="Campus Events">
+            <div class="gallery-overlay">
+              <h5>Campus Events</h5>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img/Website/th.jpg" alt="Student Activities">
+            <div class="gallery-overlay">
+              <h5>Student Activities</h5>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img/Website/lib5.jpg" alt="Campus Facilities">
+            <div class="gallery-overlay">
+              <h5></h5>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/img/Website/campus.jpg" alt="Campus Facilities">
+            <div class="gallery-overlay">
+              <h5></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">9000+</div>
+              <div class="stat-label">Students</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Schools</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">29+</div>
+              <div class="stat-label">Programmes</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">55+</div>
+              <div class="stat-label">Years of Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Programs Section -->
+    <section class="featured-programs section" id="featured-programs">
+      <div class="container section-title">
+        <h2>Featured Programs</h2>
+        <p>Kwame Nkrumah University currently has four Schools (Faculties) as follows:</p>
+      </div>
+      <div class="container">
+        <div class="featured-programs-wrapper">
+          <div class="programs-overview">
+            <div class="overview-content">
+              <h2>Discover Excellence in Education</h2>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+              <div class="overview-stats">
+                <div class="stat-item">
+                  <span class="stat-number">2,500+</span>
+                  <span class="stat-label">Active Students</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">98%</span>
+                  <span class="stat-label">Graduate Rate</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Programs Offered</span>
+                </div>
+              </div>
+            </div>
+            <div class="overview-image">
+              <img src="assets/img/Website/business.jpg" alt="Education" class="img-fluid">
+            </div>
+          </div>
+          <div class="programs-showcase">
+            <div class="program-card featured-program">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Program" class="img-fluid">
+                <div class="program-badge">
+                  <i class="bi bi-star-fill"></i>
+                  <span>Top Rated</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="program-category">Business</div>
+                <h3>School of Business Studies</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="program-meta">
+                  <div class="meta-item">
+                    <i class="bi bi-clock"></i>
+                    <span>4 Years</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="bi bi-award"></i>
+                    <span>Bachelor's</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.nkrumah.edu.zm/home/sbs/about.html" class="learn-more">Learn More</a>
+                  <div class="enrollment">
+                    <i class="bi bi-people"></i>
+                    <span>320 enrolled</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="programs-list">
+              <div class="program-item">
+                <div class="item-visual">
+                  <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Program" class="img-fluid">
+                </div>
+                <div class="item-details">
+                  <div class="item-category">Humanities</div>
+                  <h4>School of Humanities & Social Sciences</h4>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                  <div class="item-info">
+                    <span>3 Years</span>
+                    <span>Master's</span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <i class="bi bi-arrow-right-circle"></i>
+                </div>
+              </div>
+              <div class="program-item">
+                <div class="item-visual">
+                  <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Program" class="img-fluid">
+                </div>
+                <div class="item-details">
+                  <div class="item-category">Sciences</div>
+                  <h4>School of Natural Sciences</h4>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                  <div class="item-info">
+                    <span>5 Years</span>
+                    <span>Bachelor's</span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <i class="bi bi-arrow-right-circle"></i>
+                </div>
+              </div>
+              <div class="program-item">
+                <div class="item-visual">
+                  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Program" class="img-fluid">
+                </div>
+                <div class="item-details">
+                  <div class="item-category">Education</div>
+                  <h4>School of Education</h4>
+                  <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+                  <div class="item-info">
+                    <span>3 Years</span>
+                    <span>Bachelor's</span>
+                  </div>
+                </div>
+                <div class="item-action">
+                  <i class="bi bi-arrow-right-circle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Applications Section -->
+    <section class="applications section" id="applications">
+      <div class="container section-title">
+        <h2>Applications Forms</h2>
+        <p>If you wish to do a manual application, you can download the forms and apply manually</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-file-earmark-text"></i>
+              <h4>Full Time Manual Application Forms</h4>
+              <p>Fulltime Application Form</p>
+              <ul>
+                <li>Date published: 30/10/2025</li>
+              </ul>
+              <a href="docs/KNU Application Form 2026.pdf" target="_blank">Click to Download form</a>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-file-earmark-text"></i>
+              <h4>Distance Manual Application Forms</h4>
+              <p>Distance Application Form</p>
+              <ul>
+                <li>Date published: 30/10/2025</li>
+              </ul>
+              <a href="docs/KNU Application Form 2026.pdf" target="_blank">Click to Download form</a>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-file-earmark-text"></i>
+              <h4>Teaching Methodology Manual Application Forms</h4>
+              <p>Teaching Methodology Application Form</p>
+              <ul>
+                <li>Date published: 15/02/2021</li>
+              </ul>
+              <a href="docs/METHODOLOGY APPLICATION FORM.pdf" target="_blank">Click to Download form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact section-bg" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact us using the following information</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Our Address</h3>
+              <p>Plot 1583 Munkoyo Street, Kabwe, Zambia P.O. Box 80404</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p><a href="mailto:registrar@nkrumah.edu.zm">registrar@nkrumah.edu.zm</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box mb-4">
+              <i class="bi bi-phone"></i>
+              <h3>Call Us</h3>
+              <p>
+                Admissions Office: +260777291088<br>
+                Administration Office: +260979537501
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div style="width: 100%">
+              <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=-14.4465258,28.4747169&amp;q=Plot%201583%20Munkoyo%20Street%2C%20Kabwe%2C%20Zambia+(Kwame%20Nkrumah%20University)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer position-relative">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Address</h4>
+            <p>
+              Plot 1583 Munkoyo Street <br>
+              Kabwe, Zambia P.O. Box 80404<br>
+              Zambia<br><br>
+              <strong>Phone:</strong> +260963628450<br>
+              <strong>Email:</strong> <a href="mailto:registrar@nkrumah.edu.zm">registrar@nkrumah.edu.zm</a>
+            </p>
+          </div>
+     
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Featured Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+     
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.edu.gov.zm/">Ministry of Education</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.exams-council.org.zm/">Examination Council of Zambia</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.helsb.gov.zm/">Higher Education Loans and Scholarships Board</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.teacher.tcz.ac.zm/">The Teaching Council of Zambia</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.zaqa.gov.zm/">Zambia Qualifications Authority</a></li>
+            </ul>
+          </div>
+     
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Kwame Nkrumah University</h4>
+            <div style="width: 115px; height: 150px;  display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+              <img src="assets/img/newknulogo.png" alt="Kwame Nkrumah University Logo" width="115" height="100">
+              <span style="color: #ff992f; font-weight: bold;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Kwame Nkrumah University 2024</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/NkrumahUniversityKNU/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <!-- AOS Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Main JavaScript -->
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+   
+    // Back to Top Button
+    const backToTop = document.querySelector('.back-to-top');
+   
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    });
+   
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+   
+    // Search help message animation
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(() => {
+        const helpMessage = document.getElementById("help-message");
+        if (helpMessage) {
+          helpMessage.classList.remove("hidden");
+          helpMessage.classList.add("visible");
+        }
+      }, 2000);
+
+      // Programs data with admission requirements and durations
+      const programs = [
+        { name: "Bachelor of Business Studies with Education", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of ICT with Education", category: "computers", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts in Entrepreneurship with Education", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts in Entrepreneurship", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts in Economics", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Accountancy", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Business Administration", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Marketing", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts in Human Resources", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Procurement and Supply Chain Management", category: "business", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Religious Education & Civic Education", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Civic Education & Religious Studies Education", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Civic Education & French", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Civic Education & Linguistics and African Languages", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Civic Education & Physical Education Sport", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - English & History", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - English & Geography", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education – English & French", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education – English & Linguistics and African Languages", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - French & Geography", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - French & History", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education – French & Mathematics", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - French & Religious Studies Education", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education – Geography & History", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Geography & Mathematics", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education – Geography & Civic Education", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education – Geography & Linguistics and African Languages", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Geography & Physical Education and Sport", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - History & Religious Studies Education", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education- History & Civic Education", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education- History & Linguistics and African Languages", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts Education- History & Physical Education and Sport", category: "humanities", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Science in Biology and Chemistry with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Biology and Mathematics with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Chemistry and Biology with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Chemistry and Mathematics with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Chemistry and Physics with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Physics and Chemistry with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Physics and Mathematics with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and Biology with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and Chemistry with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and Physics with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and French with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and Geography with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and History with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and ICT with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and Physical Education and Sport with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Science in Mathematics and Special Needs Education with Education", category: "science", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Diploma in Agriculture Science Education", category: "agriculture", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "3 Years" },
+        { name: "Master of Education in Mathematics Education", category: "science", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Education in Science Education", category: "science", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Bachelor of Primary Education", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Physical Education Sport & Mathematics", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English and Mathematics.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Special Education Needs & Physical Education and Sport", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts with Education - Special Education Needs & French", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Arts in Educational Administration and Management", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Education in Sociology of Education", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Education in Educational Psychology", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Bachelor of Education in Early Childhood Education", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "4 Years" },
+        { name: "Early Childhood Education Teachers Diploma", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "2 Years" },
+        { name: "Primary Teacher`s Diploma", category: "education", requirements: "Full Grade 12 Certificate with 5 ‘O’ Level Credits including English.", duration: "3 Years" },
+        { name: "Master of Business Studies (Accountancy)", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Business Studies (Marketing)", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Business Studies (Entrepreneurship)", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Business Studies (Human Resource Management)", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Business Studies (Information Systems)", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Business Administration (Generic)", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Education in Educational Management, Administration and Leadership", category: "education", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Arts (MA) in History", category: "humanities", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Arts in (MA) Religious Studies", category: "humanities", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Education (MEd) in Special Education", category: "education", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Masters of Arts (MA) in Civic Education", category: "humanities", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Arts ( MA) in General Linguistics", category: "humanities", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Science (MSc) in Geography", category: "science", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Master of Business Studies", category: "business", requirements: "A first degree from a recognized institution.", duration: "2 Years" },
+        { name: "Postgraduate Diploma in Teaching Methodology - Under Distance learning August 2019", category: "education", requirements: "A first degree from a recognized institution.", duration: "1 Year" },
+        { name: "Doctor of Philosophy – Management by Research", category: "business", requirements: "A master’s degree in a business-related Programme from a recognized institution; Certified Transcripts; Two personal references; Research topic and statement of the problem.", duration: "3-5 Years" },
+        { name: "Doctor of Philosophy – Business Administration by Research", category: "business", requirements: "A master’s degree in a business-related Programme from a recognized institution; Certified Transcripts; Two personal references; Research topic and statement of the problem.", duration: "3-5 Years" }
+      ];
+
+      const searchInput = document.getElementById('program-search');
+      const dataList = document.getElementById('program-datalist');
+      const resultsDiv = document.getElementById('program-results');
+      const pillButtons = document.querySelectorAll('.pill-btn');
+      let selectedCategory = 'all';
+
+      // Function to populate datalist based on category
+      function populateDataList(category = 'all') {
+        dataList.innerHTML = '';
+        const filteredPrograms = programs.filter(program => category === 'all' || program.category === category);
+        filteredPrograms.forEach(program => {
+          const option = document.createElement('option');
+          option.value = program.name;
+          dataList.appendChild(option);
+        });
+      }
+
+      // Initial population
+      populateDataList();
+
+      // Handle selection to display details
+      searchInput.addEventListener('change', () => {
+        const selectedName = searchInput.value;
+        const selectedProgram = programs.find(p => p.name === selectedName);
+        if (selectedProgram) {
+          resultsDiv.innerHTML = `
+            <div class="program-details">
+              <h3>${selectedProgram.name}</h3>
+              <div class="details">Duration: ${selectedProgram.duration}</div>
+              <div class="details">Admission Requirements: ${selectedProgram.requirements}</div>
+            </div>
+          `;
+        } else {
+          resultsDiv.innerHTML = '<p>No program found or invalid selection.</p>';
+        }
+      });
+
+      // Category pills to filter datalist
+      pillButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          pillButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          selectedCategory = button.getAttribute('data-category');
+          populateDataList(selectedCategory);
+          searchInput.value = ''; // Clear input on category change
+          resultsDiv.innerHTML = ''; // Clear results
+        });
+      });
+    });
+  </script>
+</body>
+</html>
